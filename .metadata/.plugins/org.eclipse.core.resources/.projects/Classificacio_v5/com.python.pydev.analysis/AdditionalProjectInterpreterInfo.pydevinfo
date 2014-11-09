@@ -1,0 +1,71 @@
+-- VERSION_4
+-- START DISKCACHE
+D:\Icar\Code\.metadata\.plugins\org.eclipse.core.resources\.projects\Classificacio_v5\com.python.pydev.analysis\v2_indexcache
+program.__init__|1414774000000|D:\Icar\Code\Classificacio_v5\src\program\__init__.py
+program.Docmodel|1414865854307|D:\Icar\Code\Classificacio_v5\src\program\Docmodel.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+3=Docmodel.__init__
+2=Docmodel
+1=program.Docmodel
+-- END DICTIONARY
+-- START TREE 1
+41
+L|0|
+aux|0|
+c|0|
+cla|0|
+cm|0|
+cm2|0|
+cn|0|
+con|0|
+cx|0|
+d|0|
+dat|0|
+des|0|
+doc|1|Docmodel!9@
+f|0|
+fil|0|
+fin|0|
+fla|0|
+fol|0|
+gra|0|
+hom|0|
+img|0|
+imm|0|
+imp|0|
+int|0|
+key|0|
+kpq|0|
+kpt|0|
+lau|0|
+mas|0|
+mat|0|
+mod|0|
+orb|0|
+que|0|
+t|0|
+tim|0|
+tmp|0|
+tra|0|
+vn|0|
+vot|0|
+y_p|0|
+y_t|0|
+-- END TREE
+-- START TREE 2
+12
+__i|1|__init__!2&10@
+cal|1|calculateBestTfIdfDesctiptors!2&10@
+com|1|compareWithIdf!2&10@
+des|3|desc_imatges!3&11@desc_finals!3&11@desc_totals!3&11@
+fol|1|foldername!3&11@
+get|11|getDescriptorsImatges!2&10@getReferences!2&10@getKeypointsFinals!2&10@getDescriptorsFinals!2&10@getDescriptorsTotals!2&10@getOrb!2&10@getMaxDesc!2&10@getFoldername!2&10@getVotesTf!2&10@getVotesIdf!2&10@getKeypointsTotals!2&10@
+key|3|keyp_totals!3&11@keyp_imatges!3&11@keyp_finals!3&11@
+mat|1|matcher_params!3&11@
+max|1|maxdesc!3&11@
+orb|1|orb!3&11@
+ref|1|references!3&11@
+vot|2|votestf!3&11@votesidf!3&11@
+-- END TREE

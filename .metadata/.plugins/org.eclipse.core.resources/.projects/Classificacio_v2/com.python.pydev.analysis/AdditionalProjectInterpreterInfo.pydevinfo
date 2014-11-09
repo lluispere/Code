@@ -1,0 +1,75 @@
+-- VERSION_4
+-- START DISKCACHE
+D:\Icar\Code\.metadata\.plugins\org.eclipse.core.resources\.projects\Classificacio_v2\com.python.pydev.analysis\v2_indexcache
+program.main2|1414366854270|D:\Icar\Code\Classificacio_v2\src\program\main2.py
+program.Docmodel2|1414663469304|D:\Icar\Code\Classificacio_v2\src\program\Docmodel2.py
+program.__init__|1414165056281|D:\Icar\Code\Classificacio_v2\src\program\__init__.py
+program.main|1414363140495|D:\Icar\Code\Classificacio_v2\src\program\main.py
+program.Docmodel|1414345889071|D:\Icar\Code\Classificacio_v2\src\program\Docmodel.py
+program.main3|1414373682981|D:\Icar\Code\Classificacio_v2\src\program\main3.py
+-- END DISKCACHE
+-- START DICTIONARY
+9
+3=program.main2
+5=program.Docmodel2
+8=Docmodel2.__init__
+2=program.main
+9=Docmodel.__init__
+6=Docmodel
+4=program.Docmodel
+1=program.main3
+7=Docmodel2
+-- END DICTIONARY
+-- START TREE 1
+39
+L|1|L!11@
+aux|4|aux!19@aux2!27@aux2!11@aux2!19@
+c|3|c!19@c!27@c!11@
+c1|1|c1!27@
+cla|1|classDescriptors!11@
+cm|3|cm!11@cm!19@cm!27@
+cm2|3|cm2!27@cm2!11@cm2!19@
+con|3|contok!11@contok!19@contok!27@
+d|3|d!27@d!11@d!19@
+dat|3|data!27@data!11@data!19@
+des|4|descriptors!27@descriptors!19@descriptorsClasse!19@descriptorsClasse!27@
+dis|2|distances!27@distances!19@
+doc|5|doc!19@doc!11@Docmodel!33@Docmodel2!41@doc!27@
+f|3|f!11@f!19@f!27@
+fil|3|fileout!27@fileout!11@fileout!19@
+fin|8|finalmatches!27@finalKeypointsClasse!19@finalmatches!19@finalKeypointsClasse!11@finalKeypointsClasse!27@finalDescriptorsClasse!27@finalDescriptorsClasse!11@finalDescriptorsClasse!19@
+fla|3|flann_params!27@flann_params!19@flann_params!11@
+fol|3|folders!19@folders!11@folders!27@
+gra|3|gray!27@gray!11@gray!19@
+img|3|img!27@img!19@img!11@
+imp|3|improc!27@improc!11@improc!19@
+key|2|keypoints!19@keypoints!27@
+l|3|l!27@l!19@l!11@
+mat|8|matches!27@matchertmp!27@matcher!19@matchertmp!19@matches!11@matcher!27@matcher!11@matches!19@
+max|4|maxdescriptors!19@maximaFila!19@maxim!19@maxdescriptors!27@
+md|2|md!27@md!19@
+mod|3|Models!27@Models!11@Models!19@
+non|1|nonzeros!19@
+orb|3|orbdetector!27@orbdetector!11@orbdetector!19@
+que|2|queryids!27@queryids!19@
+sor|1|sortedIdx!19@
+sum|1|suma!19@
+t|3|t!27@t!11@t!19@
+thr|2|thr!19@thr!27@
+tim|3|times!27@times!19@times!11@
+tra|1|trainids!19@
+vot|1|votes!19@
+y_p|3|y_pred!11@y_pred!19@y_pred!27@
+y_t|3|y_test!11@y_test!19@y_test!27@
+-- END TREE
+-- START TREE 2
+8
+__i|2|__init__!6&34@__init__!7&42@
+__s|2|__slots__!7&43@__slots__!6&35@
+des|1|desc!8&43@
+fil|1|filename!9&35@
+fol|1|foldername!8&43@
+get|5|getMaxDesc!7&42@getOrb!7&42@getDescriptors!7&42@getFilename!6&34@getFoldername!7&42@
+max|1|maxdesc!8&43@
+orb|1|orb!8&43@
+-- END TREE

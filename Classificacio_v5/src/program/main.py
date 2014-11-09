@@ -88,13 +88,13 @@ finalKeypointsClasse = [];
 flann_params= dict(algorithm = 6,table_number = 6,key_size = 12,multi_probe_level = 1)
 orbdetector = cv2.ORB(5000,scaleFactor=1.2, nlevels=8, edgeThreshold=5, firstLevel=0, WTA_K=2, scoreType=1, patchSize=31)
 
-folders_train=sorted(glob.glob('D:\\ICAR\\train\\*'))
+folders_train=sorted(glob.glob('..\\..\\..\\..\\train\\*'))
 Models = []
 classDescriptors = []
 classKeypoints = []
 
-if os.path.isfile('D:\\ICAR\\Results\\Classificacio_v5\\objs.pickle'):
-    with open('D:\\ICAR\\Results\\Classificacio_v5\\objs.pickle','rb') as f:
+if os.path.isfile('..\\..\\..\\..\\Results\\Classificacio_v5\\objs.pickle'):
+    with open('..\\..\\..\\..\\Results\\Classificacio_v5\\objs.pickle','rb') as f:
         classDescriptors,tmp,Models = pickle.load(f)
     # carreguem els keypoints
     classKeypoints = convertirVarToKeypoints(tmp)
@@ -126,16 +126,16 @@ else :
     tmpkeyp = convertirKeypointsToVars(classKeypoints)
         
     # store the descriptors, keypoints on disk
-    with open('D:\\ICAR\\Results\\Classificacio_v5\\objs.pickle', 'wb') as f:
+    with open('..\\..\\..\\..\\Results\\Classificacio_v5\\objs.pickle', 'wb') as f:
         pickle.dump((classDescriptors,tmpkeyp,Models), f)    
 
 '''TEST'''
     
 improc=0.0
 contok=0.0
-fileout=open('D:\\ICAR\\Results\\Classificacio_v5\\confmatORB.dat','w')
-folders_test=sorted(glob.glob('D:\\ICAR\\test\\*'))
-#folders=sorted(glob.glob('D:\\ICAR\\test\\*'))
+fileout=open('..\\..\\..\\..\\Results\\Classificacio_v5\\confmatORB.dat','w')
+folders_test=sorted(glob.glob('..\\..\\..\\..\\test\\*'))
+#folders=sorted(glob.glob('..\\..\\..\\..\\test\\*'))
 times=[]
 
 
@@ -160,44 +160,56 @@ for f in folders_test:
             immatches = np.array([m.imgIdx for m in matches])
             trainmatchesId = np.array([m.trainIdx for m in matches])
             querymatchesId = np.array([m.queryIdx for m in matches])
+            #c = np.bincount(np.array([m.imgIdx for m in matches]))
+            #interestc = (c>10).nonzero()[0]
             c = np.bincount(np.array([m.imgIdx for m in matches]))
-            interestc = (c>10).nonzero()[0]
+            interestc = np.argsort(c)[::-1]
+            interestc = interestc[0:10]
             if len(interestc)>0:
                 votes = np.zeros(len(interestc),np.uint16)
                 # comencem RANSAC
                 for j in range(len(interestc)):
                     cx = interestc[j]
-                    kptrainpt = []
-                    kpquerypt = []
-                    # agafem els descriptors d'interes
-                    for i in range(len(trainmatchesId)):
-                        if immatches[i] == cx:
-                            kptrainpt.append(classKeypoints[cx][trainmatchesId[i]].pt)
-                            kpquerypt.append(keypoints[querymatchesId[i]].pt)
-                    # calculem la homografia
-                    hom,mask = cv2.findHomography(np.float32(kptrainpt),np.float32(kpquerypt),cv2.RANSAC,5.0)
-                    # comprobem que el RANSAC hagi trobat una homografia
-                    if not mask is None:
-                        # apuntem aquells descriptors que realment mostren una coherencia espaial
-                        votes[j] = np.sum(mask.reshape(-1))
-                # ens quedem amb el maxim
-                c = interestc[np.argmax(votes)]    
+                    if c[cx]>4:
+                        kptrainpt = []
+                        kpquerypt = []
+                        # agafem els descriptors d'interes
+                        for i in range(len(trainmatchesId)):
+                            if immatches[i] == cx:
+                                kptrainpt.append(classKeypoints[cx][trainmatchesId[i]].pt)
+                                kpquerypt.append(keypoints[querymatchesId[i]].pt)
+                        # calculem la homografia
+                        hom,mask = cv2.findHomography(np.float32(kptrainpt),np.float32(kpquerypt),cv2.RANSAC,5.0)
+                        # comprobem que el RANSAC hagi trobat una homografia
+                        if not mask is None:
+                            # apuntem aquells descriptors que realment mostren una coherencia espaial
+                            votes[j] = np.sum(mask.reshape(-1))
+                    # ens quedem amb el maxim
+                    cn = interestc[np.argmax(votes)]
+                    vn = np.max(votes)
+                    d = interestc[np.argsort(votes)[::-1]]  
             else:
-                c = np.argmax(c)
-            doc=Models[c]
-            fileout.write(d2.split('\\')[3]+','+doc.split('\\')[3]+'\n')
-            print d2.split('\\')[3]+','+doc.split('\\')[3]
-            #l=sorted(range(len(c)), key=lambda k: c[k],reverse=True)
-            if(d2.split('\\')[3]==doc.split('\\')[3]):
-            #if [Models[x].filename.split('\\')[3] for x in l[0:10]].__contains__(d2.split('\\')[3]):
-                    contok+=1
+                cn = np.argmax(c)
+                vn = np.max(c)
+                d = np.argsort(c)[::-1]
+            doc=Models[cn]
+            fileout.write(d2.split('\\')[5]+','+doc.split('\\')[3]+','+str(vn)+'\n')
+            print d2.split('\\')[5]+','+doc.split('\\')[3]+','+str(vn)
+            # calcular L1
+            if(d2.split('\\')[5]==doc.split('\\')[3]):
+                contok+=1
+            # calcular L5
+            #for x in d[0:5]:
+                #if Models[x].split('\\')[3] == d2.split('\\')[3]:
+                    #contok+=1
+                    #break
         print 'ORB ' + str(contok*100/improc) + ' '+ str(time.time()-t)
         times.append(time.time()-t)
 fileout.close()
 
 print np.mean(times)
     
-f=open('D:\\ICAR\\Results\\Classificacio_v5\\confmatORB.dat')
+f=open('..\\..\\..\\..\\Results\\Classificacio_v5\\confmatORB.dat')
 data=f.readlines()
 f.close()
 
@@ -210,16 +222,16 @@ cm = confusion_matrix(y_test, y_pred)
 cm2=100*cm/np.sum(cm,axis=1)
 
 # save the confusion matrix
-np.savetxt("D:\\ICAR\\Results\\Classificacio_v5\\matrix.txt", np.asarray(cm2,np.uint32), fmt='%d')
+np.savetxt("..\\..\\..\\..\\Results\\Classificacio_v5\\matrix.txt", np.asarray(cm2,np.uint32), fmt='%d')
 
 # write the list of test labels
-f=open("D:\\ICAR\\Results\\Classificacio_v5\\test.txt",'w')
+f=open("..\\..\\..\\..\\Results\\Classificacio_v5\\test.txt",'w')
 for y in y_test :
     f.write(y+"\n");
 f.close();
     
 # write the list of pred labels
-f=open("D:\\ICAR\\Results\\Classificacio_v5\\pred.txt",'w')
+f=open("..\\..\\..\\..\\Results\\Classificacio_v5\\pred.txt",'w')
 for y in y_pred :
     f.write(y+"\n");
 f.close();

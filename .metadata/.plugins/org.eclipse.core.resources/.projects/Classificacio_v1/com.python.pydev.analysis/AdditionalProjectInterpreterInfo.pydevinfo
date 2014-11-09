@@ -1,0 +1,64 @@
+-- VERSION_4
+-- START DISKCACHE
+D:\Icar\Code\.metadata\.plugins\org.eclipse.core.resources\.projects\Classificacio_v1\com.python.pydev.analysis\v2_indexcache
+program.__init__|1413617512000|D:\Icar\Code\Classificacio_v1\src\program\__init__.py
+program.doc_class|1414324165513|D:\Icar\Code\Classificacio_v1\src\program\doc_class.py
+program.doc_class_multiple|1414325852437|D:\Icar\Code\Classificacio_v1\src\program\doc_class_multiple.py
+program.Docmodel|1413627466000|D:\Icar\Code\Classificacio_v1\src\program\Docmodel.py
+-- END DISKCACHE
+-- START DICTIONARY
+5
+1=program.doc_class
+2=program.doc_class_multiple
+5=Docmodel.__init__
+4=Docmodel
+3=program.Docmodel
+-- END DICTIONARY
+-- START TREE 1
+32
+L|2|L!11@L!19@
+c|2|c!19@c!11@
+cde|2|Cdesc!11@Cdesc!19@
+cke|2|Ckeyp!11@Ckeyp!19@
+cm|2|cm!11@cm!19@
+cm2|2|cm2!11@cm2!19@
+con|4|contok!19@contok!11@cont!11@cont!19@
+d|2|d!11@d!19@
+dat|2|data!19@data!11@
+doc|3|doc!19@Docmodel!25@doc!11@
+f|2|f!11@f!19@
+fil|2|fileout!11@fileout!19@
+fin|2|finalkeyps!19@finaldescs!19@
+fla|2|flann_params!11@flann_params!19@
+fol|2|folders!19@folders!11@
+glo|3|globalvotes!19@globaldescs!19@globalkeyps!19@
+gra|4|graytrain!19@graytrain!11@gray!11@gray!19@
+idx|1|idx!11@
+img|4|img!11@img!19@imgtrain!19@imgtrain!11@
+imp|2|improc!19@improc!11@
+ite|1|ite!19@
+l|2|l!11@l!19@
+mat|6|matches!19@matcher!11@matches!11@matcher!19@matchertmp!19@matchertmp!11@
+max|1|maxNumberOfDescClass!19@
+mod|2|Models!19@Models!11@
+orb|2|orbdetector!11@orbdetector!19@
+sor|1|sortedDescId!19@
+t|2|t!19@t!11@
+tim|2|times!19@times!11@
+vot|2|votes!11@votes!19@
+y_p|2|y_pred!19@y_pred!11@
+y_t|2|y_test!19@y_test!11@
+-- END TREE
+-- START TREE 2
+10
+__i|1|__init__!4&26@
+__s|1|__slots__!4&27@
+fil|1|filename!5&27@
+get|9|getImg!4&26@getQuad!4&26@getDescriptors!4&26@getOrb!4&26@getFilename!4&26@getThumb!4&26@getNum!4&26@getGray!4&26@getKeypoints!4&26@
+gra|1|gray!5&27@
+img|1|img!5&27@
+num|1|num!5&27@
+orb|1|orb!5&27@
+qua|1|quad!5&27@
+thu|1|thumb!5&27@
+-- END TREE

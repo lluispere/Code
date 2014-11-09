@@ -1,0 +1,57 @@
+-- VERSION_4
+-- START DISKCACHE
+D:\Icar\Code\.metadata\.plugins\org.eclipse.core.resources\.projects\Classificacio_v0\com.python.pydev.analysis\v2_indexcache
+program.__init__|1413622198340|D:\Icar\Code\Classificacio_v0\src\program\__init__.py
+program.doc_class|1413623309180|D:\Icar\Code\Classificacio_v0\src\program\doc_class.py
+program.Docmodel|1413622264565|D:\Icar\Code\Classificacio_v0\src\program\Docmodel.py
+-- END DISKCACHE
+-- START DICTIONARY
+4
+1=program.doc_class
+4=Docmodel.__init__
+3=Docmodel
+2=program.Docmodel
+-- END DICTIONARY
+-- START TREE 1
+27
+L|1|L!11@
+c|1|c!11@
+cm|1|cm!11@
+cm2|1|cm2!11@
+con|1|contok!11@
+d|1|d!11@
+dat|1|data!11@
+des|1|descriptor!11@
+det|1|detector!11@
+doc|2|Docmodel!17@doc!11@
+dsc|1|dscrpt!11@
+dtc|1|dtct!11@
+f|1|f!11@
+fil|1|fileout!11@
+fla|1|flann_params!11@
+fol|1|folders!11@
+gra|1|gray!11@
+img|1|img!11@
+imp|1|improc!11@
+key|1|keypoints!11@
+l|1|l!11@
+mat|2|matcher!11@matches!11@
+mod|1|Models!11@
+t|1|t!11@
+tim|1|times!11@
+y_p|1|y_pred!11@
+y_t|1|y_test!11@
+-- END TREE
+-- START TREE 2
+10
+__i|1|__init__!3&18@
+__s|1|__slots__!3&19@
+fil|1|filename!4&19@
+get|8|getImg!3&18@getQuad!3&18@getDescriptors!3&18@getFilename!3&18@getThumb!3&18@getNum!3&18@getGray!3&18@getKeypoints!3&18@
+gra|1|gray!4&19@
+img|1|img!4&19@
+key|1|keyp!4&19@
+num|1|num!4&19@
+qua|1|quad!4&19@
+thu|1|thumb!4&19@
+-- END TREE

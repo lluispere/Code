@@ -11,10 +11,11 @@ from shutil import copyfile
 if __name__ == '__main__':
     pass
 
-matrixPath = "E:\\ICAR\\Results\\Classificacio_v5\\test500\\matrix.txt";
-testPath = "E:\\ICAR\\test\\";
-outPath = "E:\\ICAR\\Results\\Classificacio_v5\\test500\\Confusions\\";
-outPathFiles = "E:\\ICAR\\Results\\Classificacio_v5\\test500\\";
+matrixPath = "..\\..\\..\\..\\Results\\Classificacio_v5\\test500\\matrix.txt";
+testPath = "..\\..\\..\\..\\test\\";
+trainPath = "..\\..\\..\\..\\train\\";
+outPath = "..\\..\\..\\..\\Results\\Classificacio_v5\\test500\\Confusions\\";
+outPathFiles = "..\\..\\..\\..\\Results\\Classificacio_v5\\test500\\";
 
 # check whether the matrix exists
 if os.path.isfile(matrixPath) :
@@ -56,10 +57,10 @@ if os.path.isfile(matrixPath) :
             if not os.path.isdir(nomCarpeta) :
                 os.makedirs(nomCarpeta);
             # desar dues instancies de cada classe
-            im1Names = os.listdir(testPath+d);
+            im1Names = os.listdir(trainPath+d);
             im2Names = os.listdir(testPath+d2);
             for m in range(2) :
-                copyfile(testPath+d+"\\"+im1Names[m],nomCarpeta+"\\"+im1Names[m]);
+                copyfile(trainPath+d+"\\"+im1Names[m],nomCarpeta+"\\"+im1Names[m]);
                 copyfile(testPath+d2+"\\"+im2Names[m],nomCarpeta+"\\"+im2Names[m]);
         else:
             file_classe_resutls.write("\n")

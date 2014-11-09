@@ -1,0 +1,58 @@
+-- VERSION_4
+-- START DISKCACHE
+D:\Icar\Code\.metadata\.plugins\org.eclipse.core.resources\.projects\Classificacio_v3\com.python.pydev.analysis\v2_indexcache
+program.__init__|1414663360686|D:\Icar\Code\Classificacio_v3\src\program\__init__.py
+program.main|1414779487834|D:\Icar\Code\Classificacio_v3\src\program\main.py
+program.Docmodel|1414691624461|D:\Icar\Code\Classificacio_v3\src\program\Docmodel.py
+-- END DISKCACHE
+-- START DICTIONARY
+4
+1=program.main
+4=Docmodel.__init__
+3=Docmodel
+2=program.Docmodel
+-- END DICTIONARY
+-- START TREE 1
+27
+L|1|L!11@
+aux|1|aux2!11@
+c|1|c!11@
+cla|1|classDescriptors!11@
+cm|1|cm!11@
+cm2|1|cm2!11@
+con|2|contok!11@cont!11@
+d|1|d!11@
+dat|1|data!11@
+doc|2|doc!11@Docmodel!17@
+f|1|f!11@
+fil|1|fileout!11@
+fin|2|finalKeypointsClasse!11@finalDescriptorsClasse!11@
+fla|1|flann_params!11@
+fol|2|folders_train!11@folders_test!11@
+gra|1|gray!11@
+img|1|img!11@
+imp|1|improc!11@
+l|1|l!11@
+lau|1|LAux!11@
+mat|2|matcher!11@matches!11@
+mod|1|Models!11@
+orb|1|orbdetector!11@
+t|1|t!11@
+tim|1|times!11@
+y_p|1|y_pred!11@
+y_t|1|y_test!11@
+-- END TREE
+-- START TREE 2
+11
+__i|1|__init__!3&18@
+cal|1|calculateBestTfIdfDesctiptors!3&18@
+com|1|compareWithIdf!3&18@
+des|3|desc_imatges!4&19@desc_finals!4&19@desc_totals!4&19@
+fol|1|foldername!4&19@
+get|9|getDescriptorsImatges!3&18@getReferences!3&18@getDescriptorsFinals!3&18@getDescriptorsTotals!3&18@getOrb!3&18@getMaxDesc!3&18@getFoldername!3&18@getVotesTf!3&18@getVotesIdf!3&18@
+mat|1|matcher_params!4&19@
+max|1|maxdesc!4&19@
+orb|1|orb!4&19@
+ref|1|references!4&19@
+vot|2|votestf!4&19@votesidf!4&19@
+-- END TREE
