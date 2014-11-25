@@ -1,53 +1,45 @@
 -- VERSION_4
 -- START DISKCACHE
-D:\Icar\Code\.metadata\.plugins\org.eclipse.core.resources\.projects\EstudiClasificacio\com.python.pydev.analysis\v2_indexcache
-program.__init__|1414160153000|D:\Icar\Code\EstudiClasificacio\src\program\__init__.py
-program.keypoint_matching|1415380686761|D:\Icar\Code\EstudiClasificacio\src\program\keypoint_matching.py
-program.main|1415375808245|D:\Icar\Code\EstudiClasificacio\src\program\main.py
+D:\ICAR\Code\.metadata\.plugins\org.eclipse.core.resources\.projects\EstudiClasificacio\com.python.pydev.analysis\v2_indexcache
+program.__init__|1415706276634|D:\ICAR\Code\EstudiClasificacio\src\program\__init__.py
+program.main|1415706276640|D:\ICAR\Code\EstudiClasificacio\src\program\main.py
+program.keypoint_matching|1415706276637|D:\ICAR\Code\EstudiClasificacio\src\program\keypoint_matching.py
 -- END DISKCACHE
 -- START DICTIONARY
 2
-2=program.keypoint_matching
 1=program.main
+2=program.keypoint_matching
 -- END DICTIONARY
 -- START TREE 1
-36
-d|0|
-d1|0|
+28
 d2|1|d2!11@
-des|2|descriptors_test!19@descriptors_train!19@
-fil|3|file_classe_errors!11@file_classe_resutls!11@fila!11@
+des|2|descriptors_train!19@descriptors_test!19@
+fil|3|file_classe_resutls!11@fila!11@file_classe_errors!11@
 fla|1|flann_params!19@
 fol|1|folders!19@
 gra|2|graytest1!19@graytrain1!19@
-h1|0|
-h2|0|
-hom|0|
 i|1|i!11@
 im1|1|im1Names!11@
 im2|1|im2Names!11@
-ima|3|iMax!11@image2!19@image!19@
-img|7|imgtrain1!19@imglist!19@imgtest1!19@img3p!19@img2p!19@img1p!19@img4p!19@
+ima|3|image2!19@iMax!11@image!19@
+img|7|img2p!19@imgtest1!19@img4p!19@imgtrain1!19@img1p!19@img3p!19@imglist!19@
 key|2|keypoints_matching_train!19@keypoints_matching_test!19@
 kpq|2|kpquery!19@kpquerypt!19@
-kpt|2|kptrain!19@kptrainpt!19@
+kpt|2|kptrainpt!19@kptrain!19@
 lli|2|llista!11@llistaClasses!11@
-mas|0|
-mat|4|matches!19@matrix!11@matrixPath!11@matcher!19@
+mat|4|matcher!19@matches!19@matrixPath!11@matrix!11@
 new|1|newpt!19@
 nom|1|nomCarpeta!11@
 num|1|num_imatges!11@
 orb|1|orbdetector!19@
-out|3|outPath!19@outPathFiles!11@outPath!11@
+out|3|outPathFiles!11@outPath!19@outPath!11@
 pt|1|pt!19@
 que|1|querymatchesId!19@
 tes|1|testPath!11@
 tra|2|trainmatchesId!19@trainPath!11@
 v|1|v!11@
 vis|1|vis!19@
-vot|3|votes!11@votes_correctes!11@votes_error!11@
-w1|0|
-w2|0|
+vot|3|votes_correctes!11@votes!11@votes_error!11@
 -- END TREE
 -- START TREE 2
 0

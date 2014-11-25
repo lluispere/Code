@@ -1,0 +1,42 @@
+-- VERSION_4
+-- START DISKCACHE
+D:\ICAR\Code\.metadata\.plugins\org.eclipse.core.resources\.projects\DeteccioFacial\com.python.pydev.analysis\v2_indexcache
+program.__init__|1416415483207|D:\ICAR\Code\DeteccioFacial\src\program\__init__.py
+program.main|1416477052995|D:\ICAR\Code\DeteccioFacial\src\program\main.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=program.main
+-- END DICTIONARY
+-- START TREE 1
+26
+_|0|
+a|1|a!11@
+csv|2|csvPathTest!11@csvPathTrain!11@
+f2n|1|f2name!11@
+fac|2|face_cascade!11@faces!11@
+fna|1|fname!11@
+fol|2|folder_test!11@folder_train!11@
+hom|1|hom!11@
+ica|1|icar!11@
+ima|1|images!11@
+img|3|imgp!11@img!11@img_name!11@
+ip1|1|ip1!11@
+ip2|1|ip2!11@
+ip3|1|ip3!11@
+ip4|1|ip4!11@
+mod|4|modelp!11@models!11@model_name!11@model!11@
+mp1|1|mp1!11@
+mp2|1|mp2!11@
+mp3|1|mp3!11@
+mp4|1|mp4!11@
+ord|0|
+out|1|outPath!11@
+p|1|p!11@
+poi|1|points!11@
+sub|2|sub_folders_train!11@sub_folders_test!11@
+xls|2|xlstest!11@xls!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE
