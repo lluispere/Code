@@ -1,0 +1,19 @@
+-- VERSION_4
+-- START DISKCACHE
+D:\ICAR\Code\.metadata\.plugins\org.eclipse.core.resources\.projects\CrearFitxerC\com.python.pydev.analysis\v2_indexcache
+program.__init__|1417018101180|D:\ICAR\Code\CrearFitxerC\src\program\__init__.py
+program.main|1417018708018|D:\ICAR\Code\CrearFitxerC\src\program\main.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=program.main
+-- END DICTIONARY
+-- START TREE 1
+3
+f|1|f!11@
+fil|1|file_path_name!11@
+inp|1|input_path!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

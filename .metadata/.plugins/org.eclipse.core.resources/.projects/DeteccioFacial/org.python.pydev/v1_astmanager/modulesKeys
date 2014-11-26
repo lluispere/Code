@@ -1,3 +1,4 @@
 MODULES_MANAGER_V2
 program.__init__|D:\ICAR\Code\DeteccioFacial\src\program\__init__.py
 program.main|D:\ICAR\Code\DeteccioFacial\src\program\main.py
+program.text_facial|D:\ICAR\Code\DeteccioFacial\src\program\text_facial.py
