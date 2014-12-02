@@ -1,0 +1,36 @@
+-- VERSION_4
+-- START DISKCACHE
+D:\ICAR\Code\.metadata\.plugins\org.eclipse.core.resources\.projects\GrabCut\com.python.pydev.analysis\v2_indexcache
+program.__init__|1412681039707|D:\ICAR\Code\GrabCut\src\program\__init__.py
+program.main|1417083459428|D:\ICAR\Code\GrabCut\src\program\main.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=program.main
+-- END DICTIONARY
+-- START TREE 1
+20
+bar|1|bar!11@
+bgd|1|bgdmodel!11@
+bla|1|BLACK!11@
+blu|1|BLUE!11@
+dra|5|DRAW_BG!11@DRAW_PR_FG!11@DRAW_FG!11@DRAW_PR_BG!11@drawing!11@
+fgd|1|fgdmodel!11@
+fil|1|filename!11@
+gre|1|GREEN!11@
+img|3|img2!11@img!11@imgName!11@
+k|1|k!11@
+mas|2|mask!11@mask2!11@
+onm|1|onmouse!10@
+out|1|output!11@
+rec|4|rect_over!11@rectangle!11@rect!11@rect_or_mask!11@
+red|1|RED!11@
+res|2|resultsFolder!11@res!11@
+tes|1|testFolder!11@
+thi|1|thickness!11@
+val|1|value!11@
+whi|1|WHITE!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE
